@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffe Page</title>
+</head>
+
+<body>
+    <header class="header-page">
+        <section>
+            <a href="#">
+                <img src="./img/logo.png" alt="logo da cafeteria" class="logo-img">
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Avaliações</a>
+                <a href="#address">Endereço</a>
+            </nav>
+
+            <div class="icons">
+                <img src="./img/search-icon.png" alt="icon de pesquisa (lupa)">
+                <img src="./img/cart-icon.png" alt="icon de carrinho de compra">
+            </div>
+        </section>
+    </header>
+
+    <div class="home-container">
+        <section id="home">
+            <div class="content">
+                <h3>Code com o melhor café da região</h3>
+                <p>
+                    O cheirinho do nosso café ajuda os programadores a terem ideias criativas
+                    enquanto tomam seu café.
+                </p>
+                <a href="#" class="btn">Comprar agora</a>
+            </div>
+        </section>
+    </div>
+
+    <section id="about">
+
+        <h2 class="title">Sobre <span>Nós</span></h2>
+
+        <div class="row">
+            <div class="container-img">
+                <img src="/img/about-img.jpg" alt="sobre-nós">
+            </div>
+            <div class="content">
+                <h3>O que faz o nosso café especial</h3>
+                <p>
+                    O nosso café é único porque é torrado localmente com grãos selecionados à mão,
+                    resultando em um sabor rico e aroma irresistível que inspira a criatividade dos
+                    programadores.
+                </p>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2 class="title"> Nosso <span>Menu</span></h2>
+
+        <div class="box-container">
+
+            <div class="box-btn">
+                <button class="btn" onclick="showMenu(menuOptions)">Mostrar menu</button>
+                <button class="btn" onclick="addDiscount()">Adicionar desconto</button>
+                <button class="btn" onclick="filterItens()">Promoções</button>
+            </div>
+
+            <ul class="menu-itens">
+
+                <!-- <li class="item">
+                    <img src="/img/menu-1.png" alt="foto do café">
+                    <h3 class="item-title">Despertar do Programador</h3>
+                    <div class="item-price">R$ 15,99 <span>R$ 20,99</span></div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </li> -->
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="review">
+        <h2 class="title"> <span>Nossos</span> Clientes</h2>
+
+        <ul class="review-list">
+            <li class="review-item">
+                <img src="./img/quote-img.png" alt="imagem de aspas" class="quote-img">
+                <p class="review-comment">
+                    O café desta cafeteria é simplesmente divino! O aroma é irresistível e o sabor
+                    é suave e encorpado. É o combustível perfeito para começar o dia ou para uma
+                    pausa revigorante durante o trabalho.
+                </p>
+                <img src="./img/picture-man.png" alt="foto do cliente" class="picture-person">
+                <p class="review-name">Anonimo</p>
+            </li>
+
+            <li class="review-item">
+                <img src="./img/quote-img.png" alt="imagem de aspas" class="quote-img">
+                <p class="review-comment">
+                    Adoro o café desta cafeteria! Os grãos são torrados com perfeição, resultando
+                    em um café rico e saboroso. Além disso, o atendimento é sempre amigável e
+                    acolhedor, o que torna a experiência ainda mais agradável.
+                </p>
+                <img src="/img/picture-woman.png" alt="foto do cliente" class="picture-person">
+                <p class="review-name">Anonima</p>
+            </li>
+
+            <li class="review-item">
+                <img src="./img/quote-img.png" alt="imagem de aspas" class="quote-img">
+                <p class="review-comment">
+                    Esta cafeteria se tornou meu lugar favorito para tomar café. O café é sempre
+                    fresco e delicioso, e a atmosfera é perfeita para relaxar ou trabalhar.
+                    Recomendo fortemente esta cafeteria a todos os amantes de café!
+                </p>
+                <img src="/img/picture-man2.png" alt="foto do cliente" class="picture-person">
+                <p class="review-name">Anonimo</p>
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="address">
+        <h2 class="title">Nosso <span>Endereço</span></h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16140427.016285935!2d29.81202513671657!3d9.014959741578414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1635d0cedd6cfd2b%3A0x7bf6a67f5348c55a!2zRXRpw7NwaWE!5e0!3m2!1spt-BR!2sbr!4v1717643949718!5m2!1spt-BR!2sbr"
+            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <section class="share">
+            <a href="#"><img src="/img/facebook.png" alt="logo facebook"></a>
+            <a href="#"><img src="/img/instagram.png" alt="logo instagram"></a>
+        </section>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
